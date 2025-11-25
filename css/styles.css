@@ -1,0 +1,104 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../assets/fundo_login.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.linkButton {
+    text-decoration: none;
+    color: #000;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginBox {
+    position: relative;
+    width: 350px;
+    height: 450px;
+    padding-top: 50px;
+    background-color: #2C2C2C;
+    color: #8CFF00;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+    box-shadow: 5px 5px #8813B5;
+    overflow: visible;
+}
+
+.itens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    width: 350px;
+    flex-direction: column;
+    padding: 0;
+}
+
+.divLogo {
+    position: absolute;
+    top: -45px;
+    width: inherit;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+}
+
+.inputs {
+    margin: 5px;
+}
+
+input{
+    width: 300px;
+    height: 60px;
+    border-radius: 10px;
+    background-image: url('../assets/ondas5.png');
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+.input {
+    color: #8813B5;
+    font-size: 25px !important;
+}
+
+.link {
+    text-decoration: none;
+    color: #8CFF00;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 125px;
+    height: 50px;
+}
+
+.btn-warning {
+    background-color: #C0AC9A !important;
+}
+
+.btn-warning:hover {
+    background-color: #955715be !important;
+}

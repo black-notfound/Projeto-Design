@@ -1,0 +1,32 @@
+[
+    {
+    "id": "1",
+    "nome": "Mortal Kombat 1",
+    "plataforma": "Epic Games",
+    "imagem": "../assets/MK1.png",
+    "link": "https://store.epicgames.com/pt-BR/p/mortal-kombat-1",
+    "preco_atual": 69.99,
+    "preco_original": 299.99,
+    "desconto": 70
+    },
+    {
+    "id": 2,
+    "nome": "God of War (2018)",
+    "plataforma": "Epic Games",
+    "imagem": "assets/gow2018.png",
+    "link": "https://store.epicgames.com/pt-BR/p/god-of-war",
+    "preco_atual": 99.90,
+    "preco_original": 199.90,
+    "desconto": 50
+    },
+    {
+    "id": 3,
+    "nome": "Red Dead Redemption 2",
+    "plataforma": "Epic Games",
+    "imagem": "assets/RDR2.png",
+    "link": "hthttps://store.epicgames.com/pt-BR/p/red-dead-redemption-2",
+    "preco_atual": 149.90,
+    "preco_original": 299.90,
+    "desconto": 50
+    }
+]
