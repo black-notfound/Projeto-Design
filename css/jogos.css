@@ -4,7 +4,6 @@ html, body {
     padding: 0;
     width: 100%;
     height: 100%;
-    background-color: #2C2C2C;
 }
 
 /* PALETA DE CORES */
@@ -32,6 +31,12 @@ html, body {
     font-family: 'Cinzel Decorative';
     margin: 0;
     color: black;
+    width: 220px;
+}
+
+#lojaAtual {
+    display: inline-block;
+    transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
 .logo img {
@@ -68,9 +73,29 @@ html, body {
 }
 
 /* JOGOS DO MENU */
-.itemNavbar {
-    height: 95px;
+.containerJogos {
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
 }
+
+.itemNavbar {
+    max-height: 85px;
+    max-width: 85px;
+}
+
+.botaoLoja {
+    background-color: transparent;
+    padding: 3px;
+    border: none;
+}
+
+.botaoLoja :hover{
+    transform: scale(1.2);
+    border: solid 2px var(--cinza);
+}
+
+/* PRECISO CONSERTAR O CSS DO BOTÕES DAS LOJAS... */
 
 /* ÁREA PRINCIPAL */
 .content {
@@ -78,10 +103,14 @@ html, body {
     justify-content: center;
     align-items: flex-start;
     padding: 40px;
+    padding-top: 25px;
     width: 100%;
     height: calc(100vh - 180px); /* 100px menu + 80px navbar */
-    background-color: black;
     color: white;
+    background-image: url(../assets/fundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
 .filtros {
@@ -153,18 +182,100 @@ html, body {
     margin-top: 40px;
 }
 
-.card {
-    margin-top: 40px;
-    height: 45%;
+/* CARD */
+.meuCard {
+    background: url("../assets/contrato.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid #3a1a00;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #0005;
+    position: relative;
+    transition: 0.2s ease;
+    max-width: 14rem;
+    max-height: 500px;
+    perspective: 1000px;
 }
 
-.card:hover {
-    transform: scale(1.2);
-    z-index: 10;
-    box-shadow: 0 0 20px var(--roxoEscuro);
+.meuCard:hover {
+    transform: scale(1.03);
 }
 
-.card-body{
-    height: 60px;
+/* IMAGEM DO JOGO */
+.cardImg {
+    border-radius: 8px 8px 0 0;
 }
 
+/* TÍTULO DO JOGO */
+.cardTitle {
+    font-family: "Cinzel", serif;
+    color: #2c1600;
+    text-shadow: 0 0 2px #0003;
+}
+
+/* PREÇOS */
+.precos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.precoAntigo {
+    text-decoration: line-through;
+    color: #7a5a44;
+}
+
+.novoPreco {
+    font-weight: bold;
+    color: #c91f7e;
+    font-size: 1.2rem;
+}
+
+/* TAG DA LOJA */
+.tagLoja {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.steam {
+    background: #0a47a8;
+}
+
+.epic {
+    background: #444;
+}
+
+/* BOTÃO */
+.accept-btn {
+    background: #6d1bb3;
+    border: none;
+}
+
+.accept-btn:hover {
+    background: #8d26e9;
+}
+
+/* SELO DO POLVO */
+.selo {
+    position: absolute;
+    bottom: 140px;
+    right: 2px;
+    width: 60px;
+    opacity: 0.3;
+    pointer-events: none;
+    transform: rotate(-10deg);
+}
+
+.selecionado {
+    outline: 2px dashed rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+.arrastando {
+    transform: scale(1.03);
+    opacity: 0.9;
+}

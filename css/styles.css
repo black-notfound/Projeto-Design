@@ -102,3 +102,14 @@ input{
 .btn-warning:hover {
     background-color: #955715be !important;
 }
+
+.modal-header {
+    background-color: #2C2C2C;
+    color: #8CFF00;
+}
+
+.modal-body {
+    background-color: #2C2C2C;
+    color: #8CFF00;
+    
+}

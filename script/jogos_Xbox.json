@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "nome": "Halo Infinite",
+        "plataforma": "xbox",
+        "imagem": "assets/haloinfinite.png",
+        "link": "https://www.xbox.com/pt-BR/games/halo-infinite",
+        "preco_atual": 119.90,
+        "preco_original": 249.90,
+        "desconto": 52
+    },
+    {
+        "id": "2",
+        "nome": "Forza Horizon 5",
+        "plataforma": "xbox",
+        "imagem": "assets/forzahorizon5.png",
+        "link": "https://www.xbox.com/pt-br/games/forza-horizon-5",
+        "preco_atual": 149.90,
+        "preco_original": 299.90,
+        "desconto": 50
+    },
+    {
+        "id": "3",
+        "nome": "Gears 5",
+        "plataforma": "xbox",
+        "imagem": "assets/gears5.png",
+        "link": "https://www.xbox.com/pt-Br/games/gears-5",
+        "preco_atual": 29.90,
+        "preco_original": 149.90,
+        "desconto": 80
+    }
+]

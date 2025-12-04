@@ -18,3 +18,10 @@ function logar() {
         alert("Usuário ou senha incorretos!")
     }
 };
+
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+    myInput.focus()
+})

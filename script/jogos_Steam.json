@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "nome": "Elden Ring",
+        "plataforma": "steam",
+        "imagem": "assets/eldenring.png",
+        "link": "https://store.steampowered.com/app/1245620/ELDEN_RING/",
+        "preco_atual": 149.99,
+        "preco_original": 249.99,
+        "desconto": 40
+    },
+    {
+        "id": "2",
+        "nome": "Cyberpunk 2077",
+        "plataforma": "steam",
+        "imagem": "assets/cyberpunk2077.png",
+        "link": "https://store.steampowered.com/app/1091500/Cyberpunk_2077/",
+        "preco_atual": 99.95,
+        "preco_original": 199.90,
+        "desconto": 50
+    },
+    {
+        "id": "3",
+        "nome": "Hollow Knight",
+        "plataforma": "steam",
+        "imagem": "assets/hollowknight.png",
+        "link": "https://store.steampowered.com/app/367520/Hollow_Knight/",
+        "preco_atual": 9.99,
+        "preco_original": 28.99,
+        "desconto": 65
+    }
+]

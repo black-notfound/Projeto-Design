@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "nome": "Spider-Man Remastered",
+        "plataforma": "playstation",
+        "imagem": "assets/spiderman.png",
+        "link": "https://store.playstation.com/pt-br/product/UP9000-PPSA07861_00-MARVELSSMREMASTE",
+        "preco_atual": 199.90,
+        "preco_original": 349.90,
+        "desconto": 43
+    },
+    {
+        "id": "2",
+        "nome": "The Last of Us Part II",
+        "plataforma": "playstation",
+        "imagem": "assets/tlou2.png",
+        "link": "https://store.playstation.com/pt-br/product/UP9000-CUSA10249_00-THELASTOFUSPART2",
+        "preco_atual": 99.90,
+        "preco_original": 249.90,
+        "desconto": 60
+    },
+    {
+        "id": "3",
+        "nome": "Ghost of Tsushima",
+        "plataforma": "playstation",
+        "imagem": "assets/ghostoftsushima.png",
+        "link": "https://store.playstation.com/pt-br/product/UP9000-PPSA03308_00-GHOSTDIRECTORSCUT",
+        "preco_atual": 149.90,
+        "preco_original": 349.90,
+        "desconto": 57
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "nome": "The Witcher 3: Wild Hunt",
+        "plataforma": "nuuvem",
+        "imagem": "assets/witcher3.png",
+        "link": "https://www.nuuvem.com/item/the-witcher-3-wild-hunt",
+        "preco_atual": 29.99,
+        "preco_original": 99.99,
+        "desconto": 70
+    },
+    {
+        "id": "2",
+        "nome": "Resident Evil 4 Remake",
+        "plataforma": "nuuvem",
+        "imagem": "assets/re4remake.png",
+        "link": "https://www.nuuvem.com/item/resident-evil-4-remake",
+        "preco_atual": 149.90,
+        "preco_original": 249.90,
+        "desconto": 40
+    },
+    {
+        "id": "3",
+        "nome": "Horizon Zero Dawn",
+        "plataforma": "nuuvem",
+        "imagem": "assets/horizonzerodawn.png",
+        "link": "https://www.nuuvem.com/item/horizon-zero-dawn-complete-edition",
+        "preco_atual": 49.90,
+        "preco_original": 199.90,
+        "desconto": 75
+    }
+]
