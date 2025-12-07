@@ -17,82 +17,47 @@
 </head>
 
 <body>
+    <div id="intro-container">
+        <div id="intro-content">
+            <img src="assets/logo.png" id="intro-logo">
+            <span id="site-nome">BountyHunter</span>
+        </div>
+    </div>
 
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg">
+
+    <header class="topbar">
+        <div class="topbar-left">
+
+            <img src="assets/Logo.png" alt="logo" class="topbar-logo">
+            <h1 class="topbar-title">BOUNTYHUNTER</h1>
+        </div>
+
+        <div class="topbar-platforms">
+            <img src="assets/GOGLogo.png" data-loja="GOG" class="platform-icon botaoLoja">
+            <img src="assets/Epic games.png" data-loja="Epic Games" class="platform-icon botaoLoja">
+            <img src="assets/SteamLogo.png" data-loja="Steam" class="platform-icon botaoLoja">
+            <img src="assets/blizzardLogo.png" data-loja="Blizazard" class="platform-icon botaoLoja">
+            <img src="assets/PlayStationLogo.png" data-loja="Playstation" class="platform-icon botaoLoja">
+            <img src="assets/XboxLogo.png" data-loja="Xbox" class="platform-icon botaoLoja">
+            <img src="assets/user.png" alt="User" class="platform-icon user-icon">
+        </div>
+    </header>
+
+    <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand">BountyHunter</a>
-
+            <p class="nomeLoja" id="lojaAtual">Epic Games</p>
             <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Procurar um jogo" aria-label="Search">
+                <input class="form-control me-2" type="search" placeholder="" />
                 <button class="btn btn-outline-success" type="submit">Pesquisar</button>
             </form>
         </div>
     </nav>
 
-    <!-- MENU -->
-    <header class="menu">
-        <h1 id="lojaAtual" class="nomeLoja">Epic Games</h1>
-
-        <div class="logo">
-            <img src="assets/Logo.png" alt="logo">
-        </div>
-        <nav class="navbar2">
-            <div class="containerJogos">
-                <button id="epic" class="botaoLoja" data-loja="Epic Games" onclick="trocarCards()">
-                    <img class="itemNavbar" src="assets/EpicGames.Logo.svg" alt="Bootstrap">
-                </button>
-                <button id="steam" class="botaoLoja" data-loja="Steam" onclick="trocarCards()">
-                    <img class="itemNavbar" src="assets/SteamIcon.png" alt="Bootstrap">
-                </button>
-                <button id="nuuvem" class="botaoLoja" data-loja="Nuuvem" onclick="trocarCards()">
-                    <img class="itemNavbar" src="assets/nuuvemLogo.svg" alt="Bootstrap">
-                </button>
-                <button id="playstation" class="botaoLoja" data-loja="Playstation" onclick="trocarCards()">
-                    <img class="itemNavbar" src="assets/PlayStationLogo.png" alt="Bootstrap">
-                </button>
-                <button id="xbox" class="botaoLoja" data-loja="Xbox" onclick="trocarCards()">
-                    <img class="itemNavbar" src="assets/XboxLogo.png" alt="Bootstrap">
-                </button>
-            </div>
-        </nav>
-    </header>
-
+    <!-- Background responsivo -->
+    <div class="bg-fixed"></div>
 
     <!-- CONTEÚDO -->
     <main class="content">
-        <div class="filtros">
-            <button class="btn-contrato" type="button" data-bs-toggle="collapse" data-bs-target="#contrato-filtros">
-                Abrir Filtro de Caça
-            </button>
-
-            <div class="collapse mt-3" id="contrato-filtros">
-                <div class="contrato-container">
-                    <h2>Filtre sua Caçada!</h2>
-                    <p>Selecione os alvos e condições da caça:</p>
-
-                    <label>Estilo de jogos</label>
-                    <select class="form-select contrato-input mb-2">
-                        <option>Aventura</option>
-                        <option>Terror</option>
-                        <option>Indie</option>
-                        <option>Esportes</option>
-                        <option>Estratégia</option>
-                    </select>
-
-                    <label>Valores</label>
-                    <input class="form-select contrato-input" type="text">
-                    <input type="range">
-
-                    <label>Status da Presa</label>
-                    <select class="form-select contrato-input">
-                        <option>Viva</option>
-                        <option>Mortos-Vivos</option>
-                        <option>Desconhecido</option>
-                    </select>
-                </div>
-            </div>
-        </div>
         <div class="jogos">
         </div>
     </main>

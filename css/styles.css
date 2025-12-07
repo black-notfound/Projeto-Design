@@ -83,8 +83,9 @@ input{
 }
 
 .link {
-    text-decoration: none;
+    text-decoration: none !important;
     color: #8CFF00;
+    cursor: pointer;
 }
 
 .button {

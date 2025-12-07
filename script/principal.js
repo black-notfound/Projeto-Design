@@ -24,21 +24,24 @@ function carregarJogos(loja) {
         .then(jogos => {
             jogos.forEach(jogo => {
                 areaJogos.innerHTML += `
-                <div class="card meuCard">
-                    <img src="${jogo.imagem}" class="card-img-top cardImg" alt="Jogo">
+                <div class="game-card">
+                    <div class="game-image-wrapper">
+                        <span class="tipo-jogo">Jogo Base</span>
+                        <img src="${jogo.imagem}" class="game-image" alt="Jogo">
 
-                    <div class="card-body">
-                        <h5 class="cardTitle">${jogo.nome}</h5>
+                        <div class="game-info">
+                                <h5 class="cardTitle">${jogo.nome}</h5>
+                                
+                                <div class="discount-badge">
+                                    <img src="../assets/Logo.png" class="selo" alt="">
+                                    <p class="card-text precos">
+                                        <span class="precoAntigo">R$ ${jogo.preco_original}</span>
+                                        <span class="novoPreco">R$ ${jogo.preco_atual}</span>
+                                    </p>
+                                </div>
 
-                        <img src="assets/Logo.png" class="selo" alt="">
-
-                        <p class="card-text precos">
-                            <span class="precoAntigo">R$ ${jogo.preco_original}</span>
-                            <span class="novoPreco">R$ ${jogo.preco_atual}</span>
-                        </p>
-
-                        <span class="tagLoja ${jogo.plataforma}">${jogo.plataforma}</span>
-
+                            <span class="tagLoja ${jogo.plataforma}">${jogo.plataforma}</span>
+                        </div>
                         <button class="btn btn-primary w-100 accept-btn">
                             Aceitar contrato
                         </button>
@@ -48,12 +51,12 @@ function carregarJogos(loja) {
             });
 
             new Sortable(areaJogos, {
-    animation: 150,
-    multiDrag: true,
-    selectedClass: "selecionado",  
-    fallbackOnBody: true,
-    dragClass: "arrastando"
-});
+                animation: 150,
+                multiDrag: true,
+                selectedClass: "selecionado",  
+                fallbackOnBody: true,
+                dragClass: "arrastando"
+            });
         });
 }
 
@@ -73,8 +76,47 @@ botoes.forEach(botao => {
             nomeLoja.style.opacity = 1;
         }, 300);
 
-        trocarCards(novoNome.replace(/\s+/g, "")); // Tira os espaços nos nomes do HTNL
+        trocarCards(novoNome.replace(/\s+/g, "")); 
     });
 });
+
+
+
+
+window.onload = () => {
+    const intro = document.getElementById("intro-container");
+    const logo = document.getElementById("intro-logo");
+
+    // 1 — logo gira no centro perfeitamente
+    logo.style.transform = "rotate(360deg)";
+
+    // 2 — volta ao normal
+    setTimeout(() => {
+        logo.style.transform = "rotate(0deg)";
+    }, 900);
+
+    // 3 — fundo começa a expandir
+    setTimeout(() => {
+        intro.classList.add("expand-background");
+    }, 950);
+
+    // 4 — logo corre para a esquerda
+    setTimeout(() => {
+        logo.style.transition = "transform 0.9s cubic-bezier(.25,.8,.25,1)";
+        logo.style.transform = "translateX(-150px)";
+    }, 1500);
+
+    // 5 — aparece o texto no centro alinhado com a logo
+    setTimeout(() => {
+        intro.classList.add("show-name");
+    }, 1850);
+
+    // 6 — some tudo
+    setTimeout(() => {
+        intro.style.opacity = "0";
+        intro.style.pointerEvents = "none";
+    }, 3000);
+};
+
 
 
