@@ -2,47 +2,65 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"
-        rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/plugins/MultiDrag/Sortable.multi-drag.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/plugins/MultiDrag/Sortable.multi-drag.min.js"></script>
 
-    <script src="script/principal.js" defer></script>
-    <link rel="stylesheet" href="css/jogos.css">
-    <title>Página principal</title>
+  <script src="script/principal.js" defer></script>
+  <link rel="stylesheet" href="css/jogos.css" />
+  <title>Página principal</title>
 </head>
 
 <body>
-    <div id="intro-container">
-        <div id="intro-content">
-            <img src="assets/logo.png" id="intro-logo">
-            <span id="site-nome">BountyHunter</span>
-        </div>
+  <div id="intro-container">
+    <div id="intro-content">
+      <img src="assets/logo.png" id="intro-logo" />
+      <span id="site-nome">BountyHunter</span>
+    </div>
+  </div>
+
+  <header class="topbar">
+    <div class="topbar-left">
+      <img src="assets/Logo.png" alt="logo" class="topbar-logo" />
+      <h1 class="topbar-title">BOUNTYHUNTER</h1>
     </div>
 
+    <div class="topbar-platforms">
+      <img src="assets/GOGLogo.png" data-loja="GOG" class="platform-icon botaoLoja" />
+      <img src="assets/Epic games.png" data-loja="Epic Games" class="platform-icon botaoLoja" />
+      <img src="assets/SteamLogo.png" data-loja="Steam" class="platform-icon botaoLoja" />
+      <img src="assets/blizzardLogo.png" data-loja="Blizazard" class="platform-icon botaoLoja" />
+      <img src="assets/PlayStationLogo.png" data-loja="Playstation" class="platform-icon botaoLoja" />
+      <img src="assets/XboxLogo.png" data-loja="Xbox" class="platform-icon botaoLoja" />
+      <img src="assets/user.png" alt="User" aria-controls="offcanvasRight" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasRight" class="platform-icon user-icon" />
+    </div>
 
-    <header class="topbar">
-        <div class="topbar-left">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">
+          <img src="assets/user.png" alt="User" />
+          <p>Minha conta</p>
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="listaSidebar">
 
-            <img src="assets/Logo.png" alt="logo" class="topbar-logo">
-            <h1 class="topbar-title">BOUNTYHUNTER</h1>
-        </div>
+          <li class="itemLista">
+            <a href="#" class="itemSidebar">Configurações da conta</a>
+          </li>
 
-        <div class="topbar-platforms">
-            <img src="assets/GOGLogo.png" data-loja="GOG" class="platform-icon botaoLoja">
-            <img src="assets/Epic games.png" data-loja="Epic Games" class="platform-icon botaoLoja">
-            <img src="assets/SteamLogo.png" data-loja="Steam" class="platform-icon botaoLoja">
-            <img src="assets/blizzardLogo.png" data-loja="Blizazard" class="platform-icon botaoLoja">
-            <img src="assets/PlayStationLogo.png" data-loja="Playstation" class="platform-icon botaoLoja">
-            <img src="assets/XboxLogo.png" data-loja="Xbox" class="platform-icon botaoLoja">
-            <img src="assets/user.png" alt="User" class="platform-icon user-icon">
-        </div>
-    </header>
+          <li class="itemLista">
+            <a href="#" class="itemSidebar">Biblioteca</a>
+          </li>
 
+<<<<<<< HEAD
     <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
             <p class="nomeLoja" id="lojaAtual">Epic Games</p>
@@ -52,16 +70,49 @@
             </form>
         </div>
     </nav>
+=======
+          <li class="itemLista">
+            <a href="#" class="itemSidebar">Carrinho</a>
+          </li>
+>>>>>>> d624487c9674ee6e40cb72a97f0c76b37aa4ad2b
 
-    <!-- Background responsivo -->
-    <div class="bg-fixed"></div>
+          <li class="itemLista">
+            <a href="#" class="itemSidebar">Lista de desejos</a>
+          </li>
 
-    <!-- CONTEÚDO -->
-    <main class="content">
-        <div class="jogos">
-        </div>
-    </main>
+          <li class="itemLista">
+            <a href="#" class="itemSidebar">Histórico de Compras</a>
+          </li>
 
+          <li class="itemLista">
+            <a href="#" class="itemSidebar">Sair</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <p class="nomeLoja" id="lojaAtual">Epic Games</p>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="" />
+        <button class="btn btn-outline-success" type="submit">
+          Pesquisar
+        </button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- Background responsivo -->
+  <div class="bg-fixed"></div>
+
+  <!-- CONTEÚDO -->
+  <main class="content">
+    <div class="jogos"></div>
+  </main>
 </body>
 
 </html>
