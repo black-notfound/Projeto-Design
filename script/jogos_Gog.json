@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "nome": "Cyberpunk 2077",
+        "plataforma": "gog",
+        "imagem": "assets/cyberpunk2077.png",
+        "link": "https://www.gog.com/en/game/cyberpunk_2077",
+        "preco_atual": 99.99,
+        "preco_original": 199.99,
+        "desconto": 50
+    },
+    {
+        "id": "2",
+        "nome": "Baldur's Gate 3",
+        "plataforma": "gog",
+        "imagem": "assets/baldursgate3.png",
+        "link": "https://www.gog.com/en/game/baldurs_gate_iii",
+        "preco_atual": 149.99,
+        "preco_original": 199.99,
+        "desconto": 25
+    },
+    {
+        "id": "3",
+        "nome": "Divinity: Original Sin 2 - Definitive Edition",
+        "plataforma": "gog",
+        "imagem": "assets/divinity2.png",
+        "link": "https://www.gog.com/en/game/divinity_original_sin_2_definitive_edition",
+        "preco_atual": 39.99,
+        "preco_original": 129.99,
+        "desconto": 69
+    }
+]
